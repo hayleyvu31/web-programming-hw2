@@ -3,11 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
-.plaza-background{
+.plaza-buttons{
     
     z-index: 1
 }
-.fast-forward-text{
+.fast-forward-text, .fast-forward-text2{
     position: absolute;
     background-color: black;
     color: red;
@@ -18,17 +18,28 @@
     font-size: 25px;
     font-weight: bolder;
 }
-.fast-forward-container{
+.fast-forward-text2{
+    left: 65px;
+}
+.fast-forward-container, .fast-forward-container2{
     display: flex;
     position: absolute;
     left: 1300px;
     top: 750px;
     z-index: 2;
 }
+.fast-forward-container2{
+    left: 100px;
+    rotate: 180deg;
+    z-index: 2;
+}
 img {
     width: 50px;
     background-color: red;
     border-radius: 30px;
+}
+img.default{
+    background-color: transparent;
 }
 .main-container{
     background-image: url(assets/Images/beach-plaza.jpg);
