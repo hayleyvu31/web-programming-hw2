@@ -183,7 +183,19 @@
   .sunrise-img {
     width: clamp(320px, 48vw, 640px);
     height: auto;
+    display: block;
   }
+
+  .sunrise-audio {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none;
+  }
+
   .sunrise-title {
     font-family: var(--font-display);
     font-size: clamp(2.2rem, 7vw, 5rem);
@@ -192,4 +204,101 @@
     letter-spacing: 0.03em;
     margin-top: 0.75rem; /* check to see how far from the title to the sun */
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+  }
+
+  /* Fast-forward control */
+  .plaza-background {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    z-index: 4;
+  }
+
+  .plaza-background--rewind {
+    right: auto;
+    left: 2rem;
+    bottom: 9rem;
+  }
+
+  .plaza-background--rewind .fast-forward-container img {
+    transform: scaleX(-1);
+  }
+
+  .fast-forward-text {
+    background-color: black;
+    color: red;
+    border-radius: 15px;
+    border: 5px solid black;
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 0.15rem 0.75rem;
+    white-space: nowrap;
+  }
+
+  .fast-forward-container {
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+  }
+
+  .fast-forward-container img {
+    width: 50px;
+    height: auto;
+    background-color: red;
+    border-radius: 30px;
+  }
+
+  /* Ending page */
+  .page-bg-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .ending-content {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    gap: 1rem;
+  }
+
+  .ending-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.4rem, 7vw, 5rem);
+    color: var(--star-gold);
+    line-height: 1.05;
+    letter-spacing: 0.03em;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.75);
+  }
+
+  .charlie-click-link {
+    position: fixed;
+    left: 2rem;
+    bottom: 2rem;
+    z-index: 4;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .charlie-img {
+    width: clamp(100px, 16vw, 160px);
+    height: auto;
+    display: block;
   }

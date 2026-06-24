@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <header>
-        <link rel="stylesheet" href="style-patriot.css">
-        <title>Patriot's Plaza</title>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patriot's Plaza</title>
+  <link rel="stylesheet" href="stars-and-stripes.css" />
+  <link rel="stylesheet" href="style-patriot.css" />
+</head>
+<body>
+  <div class="main-container">
+    <div class="plaza-background plaza-background--rewind">
+      <p class="fast-forward-text">Rewind</p>
+      <a href="index.html" class="fast-forward-container">
+        <img src="assets/Images/Fast-Forward.png" alt="Back to Freedom's Dawn">
+      </a>
+    </div>
 
-    <body>
-        <div class="main-container">
-            <div class="plaza-background">
-            </div> 
-            <p class="fast-forward-text">Fast-Forward</p>
-            <a href="ending.html" class="fast-forward-container" ><img src="assets/Images/Fast-Forward.png" alt="A fast forward image to get then to the next page"></a>
-        </div>
+    <div class="plaza-background">
+      <p class="fast-forward-text">Fast-Forward</p>
+      <a href="ending.html" class="fast-forward-container">
+        <img src="assets/Images/Fast-Forward.png" alt="Skip to Fireworks">
+      </a>
+    </div>
+  </div>
 
-    </body>
+  <audio id="play-music" class="sunrise-audio" autoplay loop preload="auto">
+    <source src="assets/Sound/morning-sound.mp3" type="audio/mpeg" />
+  </audio>
+</body>
 </html>

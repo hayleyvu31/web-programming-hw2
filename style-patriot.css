@@ -1,43 +1,10 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-.plaza-background{
-    
-    z-index: 1
-}
-.fast-forward-text{
-    position: absolute;
-    background-color: black;
-    color: red;
-    border-radius: 15px;
-    border: 5px solid black;
-    left: 1245px;
-    top: 700px;
-    font-size: 25px;
-    font-weight: bolder;
-}
-.fast-forward-container{
-    display: flex;
-    position: absolute;
-    left: 1300px;
-    top: 750px;
-    z-index: 2;
-}
-img {
-    width: 50px;
-    background-color: red;
-    border-radius: 30px;
-}
-.main-container{
-    background-image: url(assets/Images/beach-plaza.jpg);
-    background-position: center center;
-    background-attachment: fixed ;
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    z-index: 1;
+.main-container {
+  background-image: url(assets/Images/beach-plaza.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
