@@ -22,7 +22,7 @@
   position: absolute;
   width: 400px;
   height: 200px;
-  left: 50%;
+  left: 40%;
   bottom: 1%;
 }
 .celebration-text{
@@ -36,6 +36,13 @@
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
   left: 20%;
   bottom: 80%;
+}
+.doggy{
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  left: 55%;
+  top: 500px;
 }
 @font-face {
     font-family: 'Tropical Sunday';
