@@ -1,0 +1,24 @@
+.plaza-background{
+    
+    z-index: 1
+}
+.fast-forward-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+.main-container{
+    background-image: url(assets/Images/beach-plaza.jpg);
+    background-position: center;
+    width: 1200px;
+    height: 1000px;
+    scale: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    scale: 2;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
